@@ -48,3 +48,12 @@ while(x < 5){
 // QUICK EXERCISE
 
 // Write a while loop that prints out only the even numbers from 1 to 10.
+var temp = 1
+
+while(temp <= 10){
+  var divisible = temp % 2;
+  if(divisible == 0){
+    console.log("The value of " + temp + " is even!");
+  }
+  temp = temp + 1;
+}

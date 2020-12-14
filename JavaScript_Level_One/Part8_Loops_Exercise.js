@@ -13,10 +13,17 @@
 // Do this with a While Loop and a For Loop
 
 // While Loop
+var x = 0;
+while(x < 5){
+    console.log("hello")
+    x = x + 1;
+}
 
 
 // For Loop
-
+for(i=0; i<5; i++){
+    console.log("hello")
+}
 
 
 
@@ -29,7 +36,17 @@
 
 // METHOD ONE
 // While Loop
-
+var x = 1;
+while(x < 26){
+    var temp = x % 2;
+    if(temp == 1){
+        console.log("The value of " + x + " is odd via while loop!");
+    }
+    x = x + 1;
+}
 
 // METHOD TWO
 // For Loop
+for(i=1; i<26; i=i+2){
+    console.log("The value of " + i + " is odd via for loop!")
+}
