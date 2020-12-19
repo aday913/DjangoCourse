@@ -147,5 +147,20 @@ function caught_speeding(speed, is_birthday){
 // makeBricks(3, 2, 10) → true
 
 function makeBricks(small, big, goal){
-  //Code Goes Here
+  var size = 0;
+  for (i=0; i<big; i++){
+    if (size == goal) {
+      return true
+    } else if (size > goal) {
+      size -= 5;
+      break
+    }
+    size += 5;
+  }
+  var temp = goal - size;
+  if (temp <= small) {
+    return true;
+  } else {
+    return false
+  }
 }
