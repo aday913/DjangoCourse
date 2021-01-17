@@ -32,7 +32,7 @@ from random import shuffle
 SUITE = 'H D S C'.split()
 RANKS = '2 3 4 5 6 7 8 9 10 J Q K A'.split()
 
-class Deck:
+class Deck():
     """
     This is the Deck Class. This object will create a deck of cards to initiate
     play. You can then use this Deck list of cards to split in half and give to
@@ -41,20 +41,31 @@ class Deck:
     """
     pass
 
-class Hand:
+class Hand():
     '''
     This is the Hand class. Each player has a Hand, and can add or remove
     cards from that hand. There should be an add and remove card method here.
     '''
     pass
 
-class Player:
+class Player():
     """
     This is the Player class, which takes in a name and an instance of a Hand
     class object. The Payer can then play cards and check if they still have cards.
     """
-    pass
+    def __init__(self, name):
+        self.name = name
 
+class Game():
+    """
+    WRITTEN BY ME
+    Game class that will control the flow of the overall game itself rather than
+    writing this stuff in a __name__ == __main__
+    """
+    def __init__(self, p1Name, p2Name):
+        print('Initiallizing a game between {} and {}'.format(p1Name, p2Name))
+        player1 = Player(p1Name)
+        player2 = Player(p2Name)
 
 ######################
 #### GAME PLAY #######
