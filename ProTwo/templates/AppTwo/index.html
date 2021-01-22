@@ -1,0 +1,18 @@
+<!DOCTYPE html>
+{% load static %}
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Second App!</title>
+        <link rel="stylesheet" href="{% static 'css/main.css' %}">
+    </head>
+    <body>
+        <h1>Welcome to index.html!</h1>
+        {{ insert_me }}
+
+        <h2>Here is a different type of Django:</h2>
+        <img src="{% static 'images/Django_Movie.jpg' %}" alt="Uh oh!">
+
+    </body>
+</html>
